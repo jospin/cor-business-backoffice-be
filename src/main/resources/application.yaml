@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /corporate/backoffice/v1
+
+spring:
+  application:
+    name: cor-business.be
