@@ -5,3 +5,18 @@ server:
 spring:
   application:
     name: cor-business.be
+
+application:
+  credential[0]:
+    url: jdbc:mysql://172.17.0.2:3306/core
+    drive: com.mysql.jdbc.Driver
+    name: mysql-core
+    username: root
+    password: 123456
+  poolData:
+    connectionTimeout: 3000
+    minimumIdle: 1
+    maximumPoolSize: 10
+    idleTimeout: 5000
+    autoCommit: true
+

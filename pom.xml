@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.jospin.services.corporate.backoffice</groupId>
 	<artifactId>cor-business-backoffice-be</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>cor-business-backoffice-be</name>
 	<description>Corporate business system</description>
 	<url/>
@@ -40,9 +40,21 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>br.com.jospin.services.library</groupId>
+			<artifactId>cor-connectivity-sql</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
+		<finalName>app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
